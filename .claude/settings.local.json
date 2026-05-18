@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx nest *)",
+      "Bash(timeout 8 node dist/main.js)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -X POST http://localhost:3000/tasks -H \"Content-Type: application/json\" -d '{\"title\":\"Ma première tâche\",\"description\":\"Test depuis Claude\",\"status\":\"TODO\",\"dueDate\":\"2026-06-01T00:00:00.000Z\"}' -w \"\\\\n---HTTP %{http_code}---\\\\n\")"
+    ]
+  }
+}
